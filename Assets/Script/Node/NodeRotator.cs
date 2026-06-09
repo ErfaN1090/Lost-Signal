@@ -23,6 +23,8 @@ public class NodeRotator : MonoBehaviour
             {
                 transform.Rotate(0, 0, -90);
                 gameObject.GetComponent<Node>().RotateDirection();
+                FindFirstObjectByType<PuzzleManager>()
+               .UpdatePower();
             }
         }
     }
