@@ -14,8 +14,6 @@ public class PuzzleManager : MonoBehaviour
         UpdatePower();
         Node wire = GetNodeAt(new Vector2Int(1, 0));
         Node receiver = GetNodeAt(new Vector2Int(2, 0));
-
-        Debug.Log(AreConnected(wire, receiver));
     }
     public void FindNodes()
     {
@@ -112,7 +110,9 @@ public class PuzzleManager : MonoBehaviour
         {
             if (node.isReceiver && node.isPowered)
             {
+                CanvasManager.instance.ShowWinScreen();
                 Debug.Log("YOU WIN!");
+                Time.timeScale = 0f;
             }
         }
     }
