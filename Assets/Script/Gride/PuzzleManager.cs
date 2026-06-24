@@ -88,6 +88,13 @@ public class PuzzleManager : MonoBehaviour
     {
         node.isPowered = true;
 
+        if (node.isPortal &&
+            node.linkedPortal != null &&
+            !node.linkedPortal.isPowered)
+        {
+            PowerNode(node.linkedPortal);
+        }
+
         foreach (Direction dir in node.connections)
         {
             Node neighbor = node.GetNeighbor(dir);

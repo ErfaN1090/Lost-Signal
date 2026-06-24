@@ -16,6 +16,8 @@ public class Node : MonoBehaviour
 
     public bool isSource;
     public bool isReceiver;
+    public bool isPortal;
+    public Node linkedPortal;
 
     public bool isPowered;
     private void Start()
