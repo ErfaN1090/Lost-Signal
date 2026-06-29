@@ -18,16 +18,21 @@ public enum SignalColor
 public class Node : MonoBehaviour
 {
     public List<Direction> connections;
-
+    [Header("Position")]
     public Vector2Int nodePos;
 
+    [Header("Colors")]
     public SignalColor currentcolor;
     public SignalColor sourceColor;
     public SignalColor receiverColor;
-
+    public SignalColor convertedColor;
+    
+    [Header("Identity")]
     public bool isSource;
     public bool isReceiver;
     public bool isPortal;
+    public bool isConverter;
+
     public Node linkedPortal;
 
     private void Start()

@@ -109,6 +109,11 @@ public class PuzzleManager : MonoBehaviour
             return;
         }
 
+        if (node.isConverter)
+        {
+            node.currentcolor = node.convertedColor;
+            color = node.convertedColor;
+        }
 
         if (node.isPortal &&
             node.linkedPortal != null &&

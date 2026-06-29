@@ -1152,7 +1152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2597219859407267261, guid: e91d55110e134d44bb2ec24db7f49c79, type: 3}
       propertyPath: m_Name
-      value: SourceNode
+      value: SourceNodeBlue
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1695,7 +1695,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2597219859407267261, guid: e91d55110e134d44bb2ec24db7f49c79, type: 3}
       propertyPath: m_Name
-      value: SourceNode (1)
+      value: SourceNodeGreen
       objectReference: {fileID: 0}
     - target: {fileID: 3241803305713076289, guid: e91d55110e134d44bb2ec24db7f49c79, type: 3}
       propertyPath: m_Color.b
@@ -2545,6 +2545,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9151197450283574918, guid: 448fd46e24ffebe4b938dc3f2a4157b0, type: 3}
+      propertyPath: m_Color.b
+      value: 0.75639164
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151197450283574918, guid: 448fd46e24ffebe4b938dc3f2a4157b0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9151197450283574918, guid: 448fd46e24ffebe4b938dc3f2a4157b0, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7528302
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2565,11 +2577,11 @@ SceneRoots:
   - {fileID: 2120107356}
   - {fileID: 1769929877}
   - {fileID: 124261509}
+  - {fileID: 750920098}
+  - {fileID: 1676250808}
   - {fileID: 1073557761}
+  - {fileID: 2144975431}
   - {fileID: 2090554140}
   - {fileID: 1097446818}
   - {fileID: 1851419295}
   - {fileID: 1550051542}
-  - {fileID: 750920098}
-  - {fileID: 1676250808}
-  - {fileID: 2144975431}
