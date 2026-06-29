@@ -8,34 +8,42 @@ public enum Direction
     Down,
     Left
 }
+public enum SignalColor
+{
+    None,
+    Blue,
+    Red,
+    Green
+}
 public class Node : MonoBehaviour
 {
     public List<Direction> connections;
 
     public Vector2Int nodePos;
 
+    public SignalColor currentcolor;
+    public SignalColor sourceColor;
+    public SignalColor receiverColor;
+
     public bool isSource;
     public bool isReceiver;
     public bool isPortal;
     public Node linkedPortal;
 
-    public bool isPowered;
     private void Start()
     {
         nodePos = Vector2Int.RoundToInt(transform.position);
-    }
-    private void Update()
-    {
-        if (isPowered)
+
+        if (isSource)
         {
-            Debug.Log(name + " Powered");
+            sourceColor = currentcolor;
         }
     }
     public void RotateDirection()
     {
         for (int i = 0; i < connections.Count; i++)
         {
-            switch (connections[i]) 
+            switch (connections[i])
             {
                 case Direction.Up:
                     connections[i] = Direction.Right;

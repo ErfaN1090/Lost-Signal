@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3241803305713076289}
   - component: {fileID: 1437757137037163387}
   - component: {fileID: 406795396171943359}
-  - component: {fileID: 5874374276910565983}
+  - component: {fileID: 9206441003622584102}
   m_Layer: 0
   m_Name: SourceNode
   m_TagString: Untagged
@@ -84,8 +84,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.0708081, g: 0.2890429, b: 0.735849, a: 1}
+  m_Sprite: {fileID: 6805849627060807917, guid: 9d99aa52f1ce49e41b0bf6b7123b13d3, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -107,6 +107,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
   connections: 03000000
+  nodePos: {x: 0, y: 0}
+  currentcolor: 0
+  sourceColor: 0
+  receiverColor: 0
+  isSource: 0
+  isReceiver: 0
+  isPortal: 0
+  linkedPortal: {fileID: 0}
 --- !u!114 &406795396171943359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -119,8 +127,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aacd6eefad9b5443940e15926dcf06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NodeRotator
---- !u!58 &5874374276910565983
-CircleCollider2D:
+--- !u!61 &9206441003622584102
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -154,4 +162,14 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.91066664, y: 1.02}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

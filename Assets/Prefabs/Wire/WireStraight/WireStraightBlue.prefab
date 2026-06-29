@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4484827646723472174}
   - component: {fileID: 3754329692594569200}
-  - component: {fileID: 8953954310344738948}
   - component: {fileID: 8571141481677517773}
   - component: {fileID: 1909489010088145382}
+  - component: {fileID: 17763648535733676}
   m_Layer: 0
-  m_Name: WireStraight
+  m_Name: WireStraightBlue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,8 +84,8 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0.7721119, g: 0.78867924, b: 0.09374862, a: 1}
+  m_Sprite: {fileID: -1965468378420388, guid: 4e8b1f4d782c71444a2eb73f410b1f29, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -94,8 +94,39 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!70 &8953954310344738948
-CapsuleCollider2D:
+--- !u!114 &8571141481677517773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5249704076540167488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 472501e272bcef341891338aab1efa9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Node
+  connections: 0000000002000000
+  nodePos: {x: 0, y: 0}
+  isSource: 0
+  isReceiver: 0
+  isPortal: 0
+  linkedPortal: {fileID: 0}
+  isPowered: 0
+--- !u!114 &1909489010088145382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5249704076540167488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aacd6eefad9b5443940e15926dcf06a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NodeRotator
+--- !u!60 &17763648535733676
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,30 +160,38 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
---- !u!114 &8571141481677517773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5249704076540167488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 472501e272bcef341891338aab1efa9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Node
-  connections: 0000000002000000
---- !u!114 &1909489010088145382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5249704076540167488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aacd6eefad9b5443940e15926dcf06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NodeRotator
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.2222223, y: 2.2222223}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33555555, y: -0.8333334}
+      - {x: 0.33555555, y: 0.83555555}
+      - {x: 0.33111113, y: 0.84444445}
+      - {x: 0.31333333, y: 0.85333335}
+      - {x: 0.28, y: 0.86222225}
+      - {x: 0.25555557, y: 0.8666667}
+      - {x: 0.22222222, y: 0.87111115}
+      - {x: 0.10666667, y: 0.88}
+      - {x: 0.035555556, y: 0.88222224}
+      - {x: -0.06666667, y: 0.88222224}
+      - {x: -0.108888894, y: 0.88}
+      - {x: -0.27333334, y: 0.87111115}
+      - {x: -0.3377778, y: 0.8466667}
+      - {x: -0.3377778, y: -0.8333334}
+      - {x: -0.32, y: -0.84444445}
+      - {x: -0.24666667, y: -0.8577778}
+      - {x: -0.19555557, y: -0.86}
+      - {x: -0.12222222, y: -0.8644445}
+      - {x: -0.037777778, y: -0.8666667}
+      - {x: 0.08444445, y: -0.8666667}
+      - {x: 0.16222222, y: -0.8644445}
+      - {x: 0.2777778, y: -0.85333335}
+      - {x: 0.31555557, y: -0.8422222}
+  m_UseDelaunayMesh: 1

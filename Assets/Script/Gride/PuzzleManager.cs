@@ -72,27 +72,49 @@ public class PuzzleManager : MonoBehaviour
     {
         foreach (Node node in nodes)
         {
-            node.isPowered = false;
+            node.currentcolor = SignalColor.None;
         }
-
-        Node source = GetSource();
-
-        if (source != null)
+        foreach (Node node in nodes)
         {
-            PowerNode(source);
+            if (!node.isSource)
+            {
+                continue;
+            }
+
+            HashSet<Node> visited = new();
+
+            PowerNode(node, node.sourceColor, visited);
         }
 
         CheckWin();
     }
-    void PowerNode(Node node)
+    void PowerNode(Node node, SignalColor color, HashSet<Node> visited)
     {
-        node.isPowered = true;
+        if (visited.Contains(node))
+            return;
+
+        visited.Add(node);
+
+        if (node.currentcolor == SignalColor.None)
+        {
+            node.currentcolor = color;
+        }
+        else if (node.currentcolor != color)
+        {
+            node.currentcolor = SignalColor.None;
+            return;
+        }
+        else
+        {
+            return;
+        }
+
 
         if (node.isPortal &&
             node.linkedPortal != null &&
-            !node.linkedPortal.isPowered)
+            node.linkedPortal.currentcolor == SignalColor.None)
         {
-            PowerNode(node.linkedPortal);
+            PowerNode(node.linkedPortal, color, visited);
         }
 
         foreach (Direction dir in node.connections)
@@ -102,25 +124,24 @@ public class PuzzleManager : MonoBehaviour
             if (neighbor == null)
                 continue;
 
-            if (neighbor.isPowered)
-                continue;
-
             if (!AreConnected(node, neighbor))
                 continue;
 
-            PowerNode(neighbor);
+            PowerNode(neighbor,color, visited);
         }
     }
     public void CheckWin()
     {
         foreach (Node node in nodes)
         {
-            if (node.isReceiver && node.isPowered)
-            {
-                CanvasManager.instance.ShowWinScreen();
-                Debug.Log("YOU WIN!");
-                Time.timeScale = 0f;
-            }
+            if (!node.isReceiver)
+                continue;
+
+            if (node.currentcolor != node.receiverColor)
+                return;
         }
+        CanvasManager.instance.ShowWinScreen();
+        Debug.Log("YOU WIN!");
+        Time.timeScale = 0f;
     }
 }
