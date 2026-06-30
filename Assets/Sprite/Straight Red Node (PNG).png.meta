@@ -1,22 +1,31 @@
 fileFormatVersion: 2
-guid: d2fd38c48924c4646abceb4162d66c76
+guid: f3d17618d5e16df4ebba7392b370e0be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3703473794076448047
-    second: Straight Blue Node_Shadow_0
+      213: 7947903145930354983
+    second: Straight Red Node (PNG)_0
   - first:
-      213: 9039124518265260089
-    second: Straight Blue Node_Shadow_1
+      213: -5347036729711430300
+    second: Straight Red Node (PNG)_1
   - first:
-      213: -3024362426636622626
-    second: Straight Blue Node_Shadow_2
+      213: 3922368099436328431
+    second: Straight Red Node (PNG)_2
   - first:
-      213: 4673159499157215761
-    second: Straight Blue Node_Shadow_3
+      213: -4533050102730307373
+    second: Straight Red Node (PNG)_3
   - first:
-      213: 4594009154824765358
-    second: Straight Blue Node_Shadow_4
+      213: 2047223856235658293
+    second: Straight Red Node (PNG)_4
+  - first:
+      213: -1252204895896219966
+    second: Straight Red Node (PNG)_5
+  - first:
+      213: 6478857514396492439
+    second: Straight Red Node (PNG)_6
+  - first:
+      213: 5540068321261855274
+    second: Straight Red Node (PNG)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,13 +147,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Straight Blue Node_Shadow_0
+      name: Straight Red Node (PNG)_0
       rect:
         serializedVersion: 2
-        x: 63
-        y: 0
-        width: 937
-        height: 1000
+        x: 349
+        y: 85
+        width: 301
+        height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -153,20 +162,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1daea15c43e9a9cc0800000000000000
-      internalID: -3703473794076448047
+      spriteID: 721736a2dcf9c4e60800000000000000
+      internalID: 7947903145930354983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_Shadow_1
+      name: Straight Red Node (PNG)_1
       rect:
         serializedVersion: 2
-        x: 76
-        y: 548
-        width: 13
-        height: 10
+        x: 973
+        y: 667
+        width: 27
+        height: 140
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,20 +184,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 93889b7abdb617d70800000000000000
-      internalID: 9039124518265260089
+      spriteID: 46575949c628bc5b0800000000000000
+      internalID: -5347036729711430300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_Shadow_2
+      name: Straight Red Node (PNG)_2
       rect:
         serializedVersion: 2
-        x: 76
-        y: 485
+        x: 974
+        y: 725
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5f93d310d0f6630800000000000000
+      internalID: 3922368099436328431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Straight Red Node (PNG)_3
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 716
         width: 10
-        height: 11
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,18 +228,62 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed42940956e4706d0800000000000000
-      internalID: -3024362426636622626
+      spriteID: 3d846bdd2fe5711c0800000000000000
+      internalID: -4533050102730307373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_Shadow_3
+      name: Straight Red Node (PNG)_4
       rect:
         serializedVersion: 2
-        x: 76
-        y: 345
+        x: 974
+        y: 702
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cb1a62043396c10800000000000000
+      internalID: 2047223856235658293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Straight Red Node (PNG)_5
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 651
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cec91a18464f9ee0800000000000000
+      internalID: -1252204895896219966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Straight Red Node (PNG)_6
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 87
         width: 7
         height: 8
       alignment: 0
@@ -219,20 +294,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11a12061ec56ad040800000000000000
-      internalID: 4673159499157215761
+      spriteID: 79229f7359689e950800000000000000
+      internalID: 6478857514396492439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_Shadow_4
+      name: Straight Red Node (PNG)_7
       rect:
         serializedVersion: 2
-        x: 72
-        y: 331
-        width: 6
-        height: 6
+        x: 513
+        y: 87
+        width: 7
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,8 +316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eaff8387cf231cf30800000000000000
-      internalID: 4594009154824765358
+      spriteID: a22253029c642ec40800000000000000
+      internalID: 5540068321261855274
       vertices: []
       indices: 
       edges: []
@@ -261,11 +336,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Straight Blue Node_Shadow_0: -3703473794076448047
-      Straight Blue Node_Shadow_1: 9039124518265260089
-      Straight Blue Node_Shadow_2: -3024362426636622626
-      Straight Blue Node_Shadow_3: 4673159499157215761
-      Straight Blue Node_Shadow_4: 4594009154824765358
+      Straight Red Node (PNG)_0: 7947903145930354983
+      Straight Red Node (PNG)_1: -5347036729711430300
+      Straight Red Node (PNG)_2: 3922368099436328431
+      Straight Red Node (PNG)_3: -4533050102730307373
+      Straight Red Node (PNG)_4: 2047223856235658293
+      Straight Red Node (PNG)_5: -1252204895896219966
+      Straight Red Node (PNG)_6: 6478857514396492439
+      Straight Red Node (PNG)_7: 5540068321261855274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

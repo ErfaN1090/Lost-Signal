@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: d3512a25c2e45d34d9a2b8a02443f370
+guid: 90adca9d1c6869d458f96019f6a9284e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 616334811261164565
-    second: Straight Blue Node-Glow_0
+      213: 8307594294551584933
+    second: Straight Green Node Glass (PNG)_0
   - first:
-      213: 1338049117669977319
-    second: Straight Blue Node-Glow_1
+      213: -3274887298365710704
+    second: Straight Green Node Glass (PNG)_1
   - first:
-      213: 1307703574323257310
-    second: Straight Blue Node-Glow_2
+      213: -1802939159382902180
+    second: Straight Green Node Glass (PNG)_2
   - first:
-      213: -4462240860119659723
-    second: Straight Blue Node-Glow_3
+      213: 4265107612518539308
+    second: Straight Green Node Glass (PNG)_3
   - first:
-      213: -8628112736034580319
-    second: Straight Blue Node-Glow_4
+      213: 3980553807369863584
+    second: Straight Green Node Glass (PNG)_4
   - first:
-      213: -7241442210443110063
-    second: Straight Blue Node-Glow_5
+      213: 6362752942898548432
+    second: Straight Green Node Glass (PNG)_5
   - first:
-      213: 8622231342031032935
-    second: Straight Blue Node-Glow_6
+      213: -6387985924338350055
+    second: Straight Green Node Glass (PNG)_6
   - first:
-      213: -1267592872796162464
-    second: Straight Blue Node-Glow_7
+      213: -193335531322999010
+    second: Straight Green Node Glass (PNG)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,12 +147,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_0
+      name: Straight Green Node Glass (PNG)_0
       rect:
         serializedVersion: 2
-        x: 363
+        x: 349
         y: 85
-        width: 281
+        width: 301
         height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51cddefce39ad8800800000000000000
-      internalID: 616334811261164565
+      spriteID: 5a02fc0def08a4370800000000000000
+      internalID: 8307594294551584933
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_1
+      name: Straight Green Node Glass (PNG)_1
       rect:
         serializedVersion: 2
         x: 973
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7ec6ebe4594b19210800000000000000
-      internalID: 1338049117669977319
+      spriteID: 09e197d6a534d82d0800000000000000
+      internalID: -3274887298365710704
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_2
+      name: Straight Green Node Glass (PNG)_2
       rect:
         serializedVersion: 2
         x: 974
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edfdb0be875e52210800000000000000
-      internalID: 1307703574323257310
+      spriteID: c5a375d036caaf6e0800000000000000
+      internalID: -1802939159382902180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_3
+      name: Straight Green Node Glass (PNG)_3
       rect:
         serializedVersion: 2
         x: 971
@@ -228,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 53b8556649fe212c0800000000000000
-      internalID: -4462240860119659723
+      spriteID: c206bfca6c4b03b30800000000000000
+      internalID: 4265107612518539308
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_4
+      name: Straight Green Node Glass (PNG)_4
       rect:
         serializedVersion: 2
         x: 974
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1a892a62e29c24880800000000000000
-      internalID: -8628112736034580319
+      spriteID: 0a10c911994cd3730800000000000000
+      internalID: 3980553807369863584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_5
+      name: Straight Green Node Glass (PNG)_5
       rect:
         serializedVersion: 2
         x: 990
@@ -272,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 159d4092daa318b90800000000000000
-      internalID: -7241442210443110063
+      spriteID: 0de0a0b171a0d4850800000000000000
+      internalID: 6362752942898548432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_6
+      name: Straight Green Node Glass (PNG)_6
       rect:
         serializedVersion: 2
         x: 506
@@ -294,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 762dff819b158a770800000000000000
-      internalID: 8622231342031032935
+      spriteID: 9180e9595a05957a0800000000000000
+      internalID: -6387985924338350055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node-Glow_7
+      name: Straight Green Node Glass (PNG)_7
       rect:
         serializedVersion: 2
         x: 513
@@ -316,8 +316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 066fa298ffa986ee0800000000000000
-      internalID: -1267592872796162464
+      spriteID: e1ff70dcb52215df0800000000000000
+      internalID: -193335531322999010
       vertices: []
       indices: 
       edges: []
@@ -336,14 +336,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Straight Blue Node-Glow_0: 616334811261164565
-      Straight Blue Node-Glow_1: 1338049117669977319
-      Straight Blue Node-Glow_2: 1307703574323257310
-      Straight Blue Node-Glow_3: -4462240860119659723
-      Straight Blue Node-Glow_4: -8628112736034580319
-      Straight Blue Node-Glow_5: -7241442210443110063
-      Straight Blue Node-Glow_6: 8622231342031032935
-      Straight Blue Node-Glow_7: -1267592872796162464
+      Straight Green Node Glass (PNG)_0: 8307594294551584933
+      Straight Green Node Glass (PNG)_1: -3274887298365710704
+      Straight Green Node Glass (PNG)_2: -1802939159382902180
+      Straight Green Node Glass (PNG)_3: 4265107612518539308
+      Straight Green Node Glass (PNG)_4: 3980553807369863584
+      Straight Green Node Glass (PNG)_5: 6362752942898548432
+      Straight Green Node Glass (PNG)_6: -6387985924338350055
+      Straight Green Node Glass (PNG)_7: -193335531322999010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -15,8 +15,13 @@ public enum SignalColor
     Red,
     Green
 }
+
 public class Node : MonoBehaviour
 {
+    private void Awake()
+    {
+        coreRenderer = GetComponent<SpriteRenderer>();
+    }
     public List<Direction> connections;
     [Header("Position")]
     public Vector2Int nodePos;
@@ -26,15 +31,45 @@ public class Node : MonoBehaviour
     public SignalColor sourceColor;
     public SignalColor receiverColor;
     public SignalColor convertedColor;
-    
+
+
     [Header("Identity")]
+    public bool isWire;
     public bool isSource;
     public bool isReceiver;
     public bool isPortal;
     public bool isConverter;
 
-    public Node linkedPortal;
+    public Node linkedPortal
+        ;
+    [Header("Sprites")]
+    public SpriteRenderer coreRenderer;
+    public Sprite offSprite;
+    public Sprite blueSprite;
+    public Sprite greenSprite;
+    public Sprite redSprite;
 
+    
+    public void UpdateSprite()
+    {
+        //it'll be changed
+
+        switch (currentcolor)
+        {
+            case SignalColor.Red:
+                coreRenderer.sprite = redSprite;
+                break;
+            case SignalColor.None:
+                coreRenderer.sprite = offSprite;
+                break;
+            case SignalColor.Green:
+                coreRenderer.sprite = greenSprite;
+                break;
+            case SignalColor.Blue:
+                coreRenderer.sprite = blueSprite;
+                break;
+        }  
+    }
     private void Start()
     {
         nodePos = Vector2Int.RoundToInt(transform.position);

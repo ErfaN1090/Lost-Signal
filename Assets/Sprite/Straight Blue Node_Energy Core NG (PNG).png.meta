@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: fc51adcf47b1616439f92568ab47d003
+guid: c8c29eee672dedb4daad13bcc77d6b0f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1066226833619924088
-    second: Straight Blue Node_ Glow (PNG) (1)_0
+      213: 4536007304444979493
+    second: Straight Blue Node_Energy Core NG (PNG)_0
   - first:
-      213: -3281469483728539219
-    second: Straight Blue Node_ Glow (PNG) (1)_1
+      213: 8701706527164538202
+    second: Straight Blue Node_Energy Core NG (PNG)_1
   - first:
-      213: 6018976035338902413
-    second: Straight Blue Node_ Glow (PNG) (1)_2
+      213: -1592955292008826664
+    second: Straight Blue Node_Energy Core NG (PNG)_2
   - first:
-      213: -8598296749384753750
-    second: Straight Blue Node_ Glow (PNG) (1)_3
+      213: 3974389059593260511
+    second: Straight Blue Node_Energy Core NG (PNG)_3
   - first:
-      213: 557246658502230962
-    second: Straight Blue Node_ Glow (PNG) (1)_4
+      213: -3784783837071826961
+    second: Straight Blue Node_Energy Core NG (PNG)_4
   - first:
-      213: 3935399211443016575
-    second: Straight Blue Node_ Glow (PNG) (1)_5
+      213: -885025242453348395
+    second: Straight Blue Node_Energy Core NG (PNG)_5
   - first:
-      213: 7880002533698144258
-    second: Straight Blue Node_ Glow (PNG) (1)_6
+      213: -6885439467150756875
+    second: Straight Blue Node_Energy Core NG (PNG)_6
   - first:
-      213: -5536835659827506563
-    second: Straight Blue Node_ Glow (PNG) (1)_7
+      213: -8591535348831785129
+    second: Straight Blue Node_Energy Core NG (PNG)_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -147,12 +147,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_0
+      name: Straight Blue Node_Energy Core NG (PNG)_0
       rect:
         serializedVersion: 2
-        x: 363
+        x: 349
         y: 85
-        width: 281
+        width: 301
         height: 830
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -162,14 +162,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 874b7e3f7affbce00800000000000000
-      internalID: 1066226833619924088
+      spriteID: 52925005c9223fe30800000000000000
+      internalID: 4536007304444979493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_1
+      name: Straight Blue Node_Energy Core NG (PNG)_1
       rect:
         serializedVersion: 2
         x: 973
@@ -184,14 +184,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da17319f3e0e572d0800000000000000
-      internalID: -3281469483728539219
+      spriteID: a5d175b9bfba2c870800000000000000
+      internalID: 8701706527164538202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_2
+      name: Straight Blue Node_Energy Core NG (PNG)_2
       rect:
         serializedVersion: 2
         x: 974
@@ -206,14 +206,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d8bd6f170d2b78350800000000000000
-      internalID: 6018976035338902413
+      spriteID: 8d83cbc0a9fa4e9e0800000000000000
+      internalID: -1592955292008826664
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_3
+      name: Straight Blue Node_Energy Core NG (PNG)_3
       rect:
         serializedVersion: 2
         x: 971
@@ -228,14 +228,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aad968389a6bca880800000000000000
-      internalID: -8598296749384753750
+      spriteID: fdd4140eacdd72730800000000000000
+      internalID: 3974389059593260511
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_4
+      name: Straight Blue Node_Energy Core NG (PNG)_4
       rect:
         serializedVersion: 2
         x: 974
@@ -250,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b38c4c22ecbbb700800000000000000
-      internalID: 557246658502230962
+      spriteID: fef91bf172fb97bc0800000000000000
+      internalID: -3784783837071826961
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_5
+      name: Straight Blue Node_Energy Core NG (PNG)_5
       rect:
         serializedVersion: 2
         x: 990
@@ -272,14 +272,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f73d96f6bb85d9630800000000000000
-      internalID: 3935399211443016575
+      spriteID: 5df60562b32c7b3f0800000000000000
+      internalID: -885025242453348395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_6
+      name: Straight Blue Node_Energy Core NG (PNG)_6
       rect:
         serializedVersion: 2
         x: 506
@@ -294,14 +294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 208814aed846b5d60800000000000000
-      internalID: 7880002533698144258
+      spriteID: 5f3360609410270a0800000000000000
+      internalID: -6885439467150756875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Straight Blue Node_ Glow (PNG) (1)_7
+      name: Straight Blue Node_Energy Core NG (PNG)_7
       rect:
         serializedVersion: 2
         x: 513
@@ -316,8 +316,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d7214448d453923b0800000000000000
-      internalID: -5536835659827506563
+      spriteID: 75f6ba1ce1cb4c880800000000000000
+      internalID: -8591535348831785129
       vertices: []
       indices: 
       edges: []
@@ -336,14 +336,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Straight Blue Node_ Glow (PNG) (1)_0: 1066226833619924088
-      Straight Blue Node_ Glow (PNG) (1)_1: -3281469483728539219
-      Straight Blue Node_ Glow (PNG) (1)_2: 6018976035338902413
-      Straight Blue Node_ Glow (PNG) (1)_3: -8598296749384753750
-      Straight Blue Node_ Glow (PNG) (1)_4: 557246658502230962
-      Straight Blue Node_ Glow (PNG) (1)_5: 3935399211443016575
-      Straight Blue Node_ Glow (PNG) (1)_6: 7880002533698144258
-      Straight Blue Node_ Glow (PNG) (1)_7: -5536835659827506563
+      Straight Blue Node_Energy Core NG (PNG)_0: 4536007304444979493
+      Straight Blue Node_Energy Core NG (PNG)_1: 8701706527164538202
+      Straight Blue Node_Energy Core NG (PNG)_2: -1592955292008826664
+      Straight Blue Node_Energy Core NG (PNG)_3: 3974389059593260511
+      Straight Blue Node_Energy Core NG (PNG)_4: -3784783837071826961
+      Straight Blue Node_Energy Core NG (PNG)_5: -885025242453348395
+      Straight Blue Node_Energy Core NG (PNG)_6: -6885439467150756875
+      Straight Blue Node_Energy Core NG (PNG)_7: -8591535348831785129
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

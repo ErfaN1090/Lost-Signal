@@ -73,6 +73,10 @@ public class PuzzleManager : MonoBehaviour
         foreach (Node node in nodes)
         {
             node.currentcolor = SignalColor.None;
+            if (node.isWire)
+            {
+                node.UpdateSprite();
+            }
         }
         foreach (Node node in nodes)
         {
@@ -98,10 +102,18 @@ public class PuzzleManager : MonoBehaviour
         if (node.currentcolor == SignalColor.None)
         {
             node.currentcolor = color;
+            if (node.isWire)
+            {
+                node.UpdateSprite();
+            }
         }
         else if (node.currentcolor != color)
         {
             node.currentcolor = SignalColor.None;
+            if (node.isWire)
+            {
+                node.UpdateSprite();
+            }
             return;
         }
         else
@@ -113,6 +125,10 @@ public class PuzzleManager : MonoBehaviour
         {
             node.currentcolor = node.convertedColor;
             color = node.convertedColor;
+            if (node.isWire)
+            {
+                node.UpdateSprite();
+            }
         }
 
         if (node.isPortal &&

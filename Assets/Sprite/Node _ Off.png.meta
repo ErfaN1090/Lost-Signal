@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4e8b1f4d782c71444a2eb73f410b1f29
+guid: 0126f9322529f694391807a1eb69c6a0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1965468378420388
-    second: Straight Blue Node_0
+      213: -6903599567685935696
+    second: Node _ Off_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 450
+  spritePixelsToUnits: 800
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Straight Blue Node_0
+      name: Node _ Off_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1000
-        height: 1000
+        x: 349
+        y: 111
+        width: 301
+        height: 785
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5bac7bba6409fff0800000000000000
-      internalID: -1965468378420388
+      spriteID: 0bd1a8025cc7130a0800000000000000
+      internalID: -6903599567685935696
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Straight Blue Node_0: -1965468378420388
+      Node _ Off_0: -6903599567685935696
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
