@@ -110,11 +110,19 @@ MonoBehaviour:
   nodePos: {x: 0, y: 0}
   currentcolor: 0
   sourceColor: 0
-  receiverColor: 0
+  receiverColor: 1
+  convertedColor: 0
+  isWire: 0
   isSource: 0
-  isReceiver: 0
+  isReceiver: 1
   isPortal: 0
+  isConverter: 0
   linkedPortal: {fileID: 0}
+  coreRenderer: {fileID: 9151197450283574918}
+  offSprite: {fileID: 0}
+  blueSprite: {fileID: 0}
+  greenSprite: {fileID: 0}
+  redSprite: {fileID: 0}
 --- !u!114 &9198043852246824593
 MonoBehaviour:
   m_ObjectHideFlags: 0

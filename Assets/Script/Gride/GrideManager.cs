@@ -10,9 +10,16 @@ public class GrideManager : MonoBehaviour
 
     void Start()
     {
-        GenerateGrid();
+
     }
 
+    public void initialize(int width, int height)
+    {
+        this.width = width;
+        this.height = height;
+
+        GenerateGrid();
+    }
     void GenerateGrid()
     {
         for (int x = 0; x < width; x++)

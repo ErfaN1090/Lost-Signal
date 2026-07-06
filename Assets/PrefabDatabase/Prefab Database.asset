@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 845e1b5cfa308004dacc408edcd611a8, type: 3}
+  m_Name: Prefab Database
+  m_EditorClassIdentifier: Assembly-CSharp::PrefabDataBase
+  sourcePrefab: {fileID: 2597219859407267261, guid: e91d55110e134d44bb2ec24db7f49c79, type: 3}
+  receiverPrefab: {fileID: 4074106164087981101, guid: 448fd46e24ffebe4b938dc3f2a4157b0, type: 3}
+  StraightPrefab: {fileID: 5249704076540167488, guid: 0d13a2913133ae94ea6a1083cf41242f, type: 3}
+  cornerPrefab: {fileID: 0}
+  threeWayPrefab: {fileID: 0}
+  fourWayPrefab: {fileID: 0}
+  portalPrefab: {fileID: 8112829774495641779, guid: 4683c256b5641024c966b845e3be436e, type: 3}
+  converterPrefab: {fileID: 3822846927969209099, guid: 6c1526aea29d2ca4da73257edef2846c, type: 3}

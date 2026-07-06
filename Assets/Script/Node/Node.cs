@@ -18,6 +18,8 @@ public enum SignalColor
 
 public class Node : MonoBehaviour
 {
+    public List<Node> nodes = new();
+
     private void Awake()
     {
         coreRenderer = GetComponent<SpriteRenderer>();
@@ -40,8 +42,9 @@ public class Node : MonoBehaviour
     public bool isPortal;
     public bool isConverter;
 
-    public Node linkedPortal
-        ;
+    public Node linkedPortal;
+    public int portalID;
+
     [Header("Sprites")]
     public SpriteRenderer coreRenderer;
     public Sprite offSprite;
@@ -81,6 +84,7 @@ public class Node : MonoBehaviour
     }
     public void RotateDirection()
     {
+        Debug.Log($"{name} RotateDiraction");
         for (int i = 0; i < connections.Count; i++)
         {
             switch (connections[i])
@@ -151,5 +155,20 @@ public class Node : MonoBehaviour
         }
 
         return Direction.Up;
+    }
+
+    public void Initialize(LevelObjectData data)
+    {
+        nodePos = data.position;
+
+        if (isSource)
+            sourceColor = data.outputColor;
+        if (isReceiver)
+            receiverColor = data.inputColor;
+        if (isConverter)
+            convertedColor = data.outputColor;
+        if (isPortal)
+            portalID = data.portalID;
+
     }
 }
