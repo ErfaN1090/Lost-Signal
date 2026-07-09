@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3356534151743275243}
   - component: {fileID: 9198043852246824593}
   - component: {fileID: 4989960072698544078}
+  - component: {fileID: 2884626203985202195}
   m_Layer: 0
   m_Name: ReceiverNode
   m_TagString: Untagged
@@ -106,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 472501e272bcef341891338aab1efa9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
+  nodes: []
   connections: 01000000
   nodePos: {x: 0, y: 0}
   currentcolor: 0
@@ -118,11 +120,7 @@ MonoBehaviour:
   isPortal: 0
   isConverter: 0
   linkedPortal: {fileID: 0}
-  coreRenderer: {fileID: 9151197450283574918}
-  offSprite: {fileID: 0}
-  blueSprite: {fileID: 0}
-  greenSprite: {fileID: 0}
-  redSprite: {fileID: 0}
+  portalID: 0
 --- !u!114 &9198043852246824593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,3 +169,16 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5555556
+--- !u!114 &2884626203985202195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4074106164087981101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c2ecc2e05c97043b1d714b1bbb8719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerFeadback
+  spriteRenderer: {fileID: 0}

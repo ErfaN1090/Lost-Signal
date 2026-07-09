@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 260628641699615791}
   - component: {fileID: 72966639985561937}
   - component: {fileID: 3186321020786135698}
+  - component: {fileID: 1320350224594746387}
   m_Layer: 0
   m_Name: Converter
   m_TagString: Untagged
@@ -106,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 472501e272bcef341891338aab1efa9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
+  nodes: []
   connections: 0000000002000000
   nodePos: {x: 0, y: 0}
   currentcolor: 0
@@ -119,11 +121,6 @@ MonoBehaviour:
   isConverter: 1
   linkedPortal: {fileID: 0}
   portalID: 0
-  coreRenderer: {fileID: 0}
-  offSprite: {fileID: 0}
-  blueSprite: {fileID: 0}
-  greenSprite: {fileID: 0}
-  redSprite: {fileID: 0}
 --- !u!114 &72966639985561937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,3 +170,16 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!114 &1320350224594746387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3822846927969209099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c2ecc2e05c97043b1d714b1bbb8719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerFeadback
+  spriteRenderer: {fileID: 0}

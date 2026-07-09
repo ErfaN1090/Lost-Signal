@@ -15,39 +15,39 @@ MonoBehaviour:
   width: 6
   hight: 6
   objects:
-  - objectType: 1
-    position: {x: 1, y: 1}
-    rotation: 2
-    portalID: 0
-    inputColor: 0
-    outputColor: 1
-  - objectType: 3
-    position: {x: 2, y: 1}
-    rotation: 0
-    portalID: 0
-    inputColor: 0
-    outputColor: 0
-  - objectType: 7
-    position: {x: 2, y: 3}
-    rotation: 1
-    portalID: 1
-    inputColor: 0
-    outputColor: 0
-  - objectType: 7
-    position: {x: 3, y: 1}
-    rotation: 2
-    portalID: 1
-    inputColor: 0
-    outputColor: 0
-  - objectType: 3
-    position: {x: 3, y: 3}
-    rotation: 0
-    portalID: 0
-    inputColor: 0
-    outputColor: 0
   - objectType: 2
-    position: {x: 4, y: 3}
-    rotation: 2
+    position: {x: 5, y: 2}
+    rotation: 1
     portalID: 0
-    inputColor: 1
+    inputColor: 3
+    outputColor: 0
+  - objectType: 1
+    position: {x: 0, y: 2}
+    rotation: 1
+    portalID: 0
+    inputColor: 0
+    outputColor: 3
+  - objectType: 3
+    position: {x: 1, y: 2}
+    rotation: 0
+    portalID: 0
+    inputColor: 0
+    outputColor: 0
+  - objectType: 3
+    position: {x: 2, y: 2}
+    rotation: 1
+    portalID: 0
+    inputColor: 0
+    outputColor: 0
+  - objectType: 3
+    position: {x: 3, y: 2}
+    rotation: 0
+    portalID: 0
+    inputColor: 0
+    outputColor: 0
+  - objectType: 3
+    position: {x: 4, y: 2}
+    rotation: 1
+    portalID: 0
+    inputColor: 0
     outputColor: 0

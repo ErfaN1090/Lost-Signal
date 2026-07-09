@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1437757137037163387}
   - component: {fileID: 406795396171943359}
   - component: {fileID: 9206441003622584102}
+  - component: {fileID: -1726463215313004102}
   m_Layer: 0
   m_Name: SourceNode
   m_TagString: Untagged
@@ -106,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 472501e272bcef341891338aab1efa9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Node
+  nodes: []
   connections: 01000000
   nodePos: {x: 0, y: 0}
   currentcolor: 1
@@ -118,11 +120,7 @@ MonoBehaviour:
   isPortal: 0
   isConverter: 0
   linkedPortal: {fileID: 0}
-  coreRenderer: {fileID: 3241803305713076289}
-  offSprite: {fileID: 0}
-  blueSprite: {fileID: 0}
-  greenSprite: {fileID: 0}
-  redSprite: {fileID: 0}
+  portalID: 0
 --- !u!114 &406795396171943359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,3 +179,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-1726463215313004102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2597219859407267261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c2ecc2e05c97043b1d714b1bbb8719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerFeadback
+  spriteRenderer: {fileID: 0}
+  node: {fileID: 0}

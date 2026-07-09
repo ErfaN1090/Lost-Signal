@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3754329692594569200}
   - component: {fileID: 8571141481677517773}
   - component: {fileID: 1909489010088145382}
+  - component: {fileID: -4952873363020269726}
   - component: {fileID: 17763648535733676}
   m_Layer: 0
   m_Name: WireStraight
@@ -120,11 +121,6 @@ MonoBehaviour:
   isConverter: 0
   linkedPortal: {fileID: 0}
   portalID: 0
-  coreRenderer: {fileID: 3754329692594569200}
-  offSprite: {fileID: -6903599567685935696, guid: 0126f9322529f694391807a1eb69c6a0, type: 3}
-  blueSprite: {fileID: 4536007304444979493, guid: c8c29eee672dedb4daad13bcc77d6b0f, type: 3}
-  greenSprite: {fileID: 8307594294551584933, guid: 90adca9d1c6869d458f96019f6a9284e, type: 3}
-  redSprite: {fileID: 7947903145930354983, guid: f3d17618d5e16df4ebba7392b370e0be, type: 3}
 --- !u!114 &1909489010088145382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +133,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9aacd6eefad9b5443940e15926dcf06a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NodeRotator
+--- !u!114 &-4952873363020269726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5249704076540167488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22c2ecc2e05c97043b1d714b1bbb8719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PowerFeadback
+  spriteRenderer: {fileID: 0}
+  node: {fileID: 0}
+  Off: {fileID: -6903599567685935696, guid: 0126f9322529f694391807a1eb69c6a0, type: 3}
+  Blue: {fileID: 4536007304444979493, guid: c8c29eee672dedb4daad13bcc77d6b0f, type: 3}
+  Green: {fileID: 8307594294551584933, guid: 90adca9d1c6869d458f96019f6a9284e, type: 3}
+  Red: {fileID: 7947903145930354983, guid: f3d17618d5e16df4ebba7392b370e0be, type: 3}
 --- !u!60 &17763648535733676
 PolygonCollider2D:
   m_ObjectHideFlags: 0

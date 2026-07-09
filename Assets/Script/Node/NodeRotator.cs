@@ -1,9 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using DG.Tweening;
 public class NodeRotator : MonoBehaviour
 {
     private Camera mainCamera;
-
+    private bool isRotating;
     private void Start()
     {
         mainCamera = Camera.main;
@@ -22,10 +23,18 @@ public class NodeRotator : MonoBehaviour
 
             if (hit != null && hit.gameObject == gameObject)
             {
-                transform.Rotate(0, 0, -90);
-                gameObject.GetComponent<Node>().RotateDirection();
-                FindFirstObjectByType<PuzzleManager>()
-               .UpdatePower();
+                //transform.DOKill();
+                if (isRotating)
+                    return;
+                isRotating = true;
+                transform.DORotate(transform.eulerAngles + new Vector3(0, 0, -90), 0.22f).SetEase(Ease.OutQuad).OnComplete(() =>
+                {
+                    gameObject.GetComponent<Node>().RotateDirection();
+                    FindFirstObjectByType<PuzzleManager>()
+                   .UpdatePower();
+                    isRotating = false;
+                });
+
             }
         }
 
@@ -40,12 +49,17 @@ public class NodeRotator : MonoBehaviour
 
             if (hit != null && hit.gameObject == gameObject)
             {
-                transform.Rotate(0, 0, -90);
-
-                GetComponent<Node>().RotateDirection();
-
-                FindFirstObjectByType<PuzzleManager>()
-                    .UpdatePower();
+                //transform.DOKill();
+                if (isRotating)
+                    return;
+                isRotating = true;
+                transform.DORotate(transform.eulerAngles + new Vector3(0, 0, -90), 0.22f).SetEase(Ease.OutQuad).OnComplete(() =>
+                {
+                    gameObject.GetComponent<Node>().RotateDirection();
+                    FindFirstObjectByType<PuzzleManager>()
+                   .UpdatePower();
+                    isRotating = false;
+                });
             }
         }
     }

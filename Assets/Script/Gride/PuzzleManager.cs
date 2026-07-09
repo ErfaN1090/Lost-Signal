@@ -146,16 +146,11 @@ public class PuzzleManager : MonoBehaviour
     }
     public void UpdatePower()
     {
+
         foreach (Node node in nodes)
         {
-            node.currentcolor = SignalColor.None;
-            if (node.isWire)
-            {
-                node.UpdateSprite();
-            }
-        }
-        foreach (Node node in nodes)
-        {
+            node.SetColor(SignalColor.None);
+
             if (!node.isSource)
             {
                 continue;
@@ -165,7 +160,16 @@ public class PuzzleManager : MonoBehaviour
 
             PowerNode(node, node.sourceColor, visited);
         }
+        foreach (Node node in nodes)
+        {
+            PowerFeadback feedback = node.GetComponent<PowerFeadback>();
 
+            if (feedback != null)
+            {
+                feedback.Refresh();
+            }
+        }
+        //Debug.Log("Check Win");
         CheckWin();
     }
     void PowerNode(Node node, SignalColor color, HashSet<Node> visited)
@@ -177,19 +181,11 @@ public class PuzzleManager : MonoBehaviour
 
         if (node.currentcolor == SignalColor.None)
         {
-            node.currentcolor = color;
-            if (node.isWire)
-            {
-                node.UpdateSprite();
-            }
+            node.SetColor(color);
         }
         else if (node.currentcolor != color)
         {
-            node.currentcolor = SignalColor.None;
-            if (node.isWire)
-            {
-                node.UpdateSprite();
-            }
+            node.SetColor(SignalColor.None);
             return;
         }
         else
@@ -199,12 +195,8 @@ public class PuzzleManager : MonoBehaviour
 
         if (node.isConverter)
         {
-            node.currentcolor = node.convertedColor;
+            node.SetColor(node.convertedColor);
             color = node.convertedColor;
-            if (node.isWire)
-            {
-                node.UpdateSprite();
-            }
         }
 
         if (node.isPortal &&

@@ -20,10 +20,7 @@ public class Node : MonoBehaviour
 {
     public List<Node> nodes = new();
 
-    private void Awake()
-    {
-        coreRenderer = GetComponent<SpriteRenderer>();
-    }
+
     public List<Direction> connections;
     [Header("Position")]
     public Vector2Int nodePos;
@@ -45,33 +42,10 @@ public class Node : MonoBehaviour
     public Node linkedPortal;
     public int portalID;
 
-    [Header("Sprites")]
-    public SpriteRenderer coreRenderer;
-    public Sprite offSprite;
-    public Sprite blueSprite;
-    public Sprite greenSprite;
-    public Sprite redSprite;
-
-    
-    public void UpdateSprite()
+    private PowerFeadback feedback;
+    private void Awake()
     {
-        //it'll be changed
-
-        switch (currentcolor)
-        {
-            case SignalColor.Red:
-                coreRenderer.sprite = redSprite;
-                break;
-            case SignalColor.None:
-                coreRenderer.sprite = offSprite;
-                break;
-            case SignalColor.Green:
-                coreRenderer.sprite = greenSprite;
-                break;
-            case SignalColor.Blue:
-                coreRenderer.sprite = blueSprite;
-                break;
-        }  
+        feedback = GetComponent<PowerFeadback>();
     }
     private void Start()
     {
@@ -84,7 +58,6 @@ public class Node : MonoBehaviour
     }
     public void RotateDirection()
     {
-        Debug.Log($"{name} RotateDiraction");
         for (int i = 0; i < connections.Count; i++)
         {
             switch (connections[i])
@@ -156,7 +129,6 @@ public class Node : MonoBehaviour
 
         return Direction.Up;
     }
-
     public void Initialize(LevelObjectData data)
     {
         nodePos = data.position;
@@ -170,5 +142,9 @@ public class Node : MonoBehaviour
         if (isPortal)
             portalID = data.portalID;
 
+    }
+    public void SetColor(SignalColor color)
+    {
+        currentcolor = color;
     }
 }
