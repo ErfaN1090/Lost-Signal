@@ -175,7 +175,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2619169}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 705681991e58f7648950156feeae2a38, type: 3}
   m_Name: 
@@ -964,6 +964,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 970516281}
   m_CullTransparentMesh: 1
+--- !u!1 &1560279269
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1560279271}
+  - component: {fileID: 1560279270}
+  - component: {fileID: 1560279273}
+  - component: {fileID: 1560279272}
+  m_Layer: 0
+  m_Name: PuzzleManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1560279270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560279269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af045b92a42647243aaeb1efcb02d117, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleManagerV2
+  levelLoader: {fileID: 1560279273}
+  signalSystem: {fileID: 1560279272}
+  grideManager: {fileID: 2619170}
+  levelData: {fileID: 11400000, guid: cb318589c213aea4b9c656a53e18e3be, type: 2}
+--- !u!4 &1560279271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560279269}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1560279272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560279269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b0be0f8d5ee4742b3b9f642ed7c8be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SignalSystemV2
+  propagationDelay: 0.05
+--- !u!114 &1560279273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560279269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e76d63b1b62c546b4d9a5ce4d06ccd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelLoaderV2
+  levelData: {fileID: 11400000, guid: cb318589c213aea4b9c656a53e18e3be, type: 2}
+  prefabDatabase: {fileID: 11400000, guid: 936437bfddf08444aa85a7efa86fe7d7, type: 2}
 --- !u!1 &1662746922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1397,3 +1474,4 @@ SceneRoots:
   - {fileID: 217931067}
   - {fileID: 1764875841}
   - {fileID: 1708775834}
+  - {fileID: 1560279271}

@@ -23,19 +23,19 @@ MonoBehaviour:
     outputColor: 0
   - objectType: 1
     position: {x: 0, y: 2}
-    rotation: 1
+    rotation: 0
     portalID: 0
     inputColor: 0
     outputColor: 3
   - objectType: 3
-    position: {x: 1, y: 2}
-    rotation: 0
+    position: {x: 2, y: 2}
+    rotation: 1
     portalID: 0
     inputColor: 0
     outputColor: 0
   - objectType: 3
-    position: {x: 2, y: 2}
-    rotation: 1
+    position: {x: 1, y: 2}
+    rotation: 0
     portalID: 0
     inputColor: 0
     outputColor: 0
@@ -45,9 +45,9 @@ MonoBehaviour:
     portalID: 0
     inputColor: 0
     outputColor: 0
-  - objectType: 3
+  - objectType: 1
     position: {x: 4, y: 2}
-    rotation: 1
+    rotation: 2
     portalID: 0
     inputColor: 0
-    outputColor: 0
+    outputColor: 1

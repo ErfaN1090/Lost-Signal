@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 198ce268d05573a4ab3b33e68708515f
+guid: a58884a99837e024bab7e0a720f67ea6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6427742563764887367
-    second: Blue Receiver_0
+      213: -2895777144591866063
+    second: Blue Reciever On (PNG)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 950
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue Receiver_0
+      name: Blue Reciever On (PNG)_0
       rect:
         serializedVersion: 2
-        x: 111
-        y: 57
-        width: 802
-        height: 880
+        x: 141
+        y: 144
+        width: 972
+        height: 996
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b0a223a1321cc6a0800000000000000
-      internalID: -6427742563764887367
+      spriteID: 13728eb870220d7d0800000000000000
+      internalID: -2895777144591866063
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Blue Receiver_0: -6427742563764887367
+      Blue Reciever On (PNG)_0: -2895777144591866063
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

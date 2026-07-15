@@ -10,12 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5228953023469056867}
   - component: {fileID: 9151197450283574918}
-  - component: {fileID: 3356534151743275243}
-  - component: {fileID: 9198043852246824593}
   - component: {fileID: 4989960072698544078}
-  - component: {fileID: 2884626203985202195}
+  - component: {fileID: -8670888891396334468}
+  - component: {fileID: 8874020654608917970}
   m_Layer: 0
-  m_Name: ReceiverNode
+  m_Name: ReceiverNode V2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -95,44 +94,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &3356534151743275243
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4074106164087981101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 472501e272bcef341891338aab1efa9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Node
-  nodes: []
-  connections: 01000000
-  nodePos: {x: 0, y: 0}
-  currentcolor: 0
-  sourceColor: 0
-  receiverColor: 1
-  convertedColor: 0
-  isWire: 0
-  isSource: 0
-  isReceiver: 1
-  isPortal: 0
-  isConverter: 0
-  linkedPortal: {fileID: 0}
-  portalID: 0
---- !u!114 &9198043852246824593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4074106164087981101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aacd6eefad9b5443940e15926dcf06a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NodeRotator
 --- !u!58 &4989960072698544078
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -169,7 +130,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5555556
---- !u!114 &2884626203985202195
+--- !u!114 &-8670888891396334468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -178,18 +139,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 4074106164087981101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22c2ecc2e05c97043b1d714b1bbb8719, type: 3}
+  m_Script: {fileID: 11500000, guid: 32b925dcd48da66428af2bf3b2e67270, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PowerFeadback
-  spriteRenderer: {fileID: 0}
-  node: {fileID: 0}
-  Off: {fileID: 0}
-  Blue: {fileID: 0}
-  Green: {fileID: 0}
-  Red: {fileID: 0}
-  OffBlue: {fileID: 7352299097250553549, guid: 8697a4cb07969ac419a775f1a95b021d, type: 3}
-  OffRed: {fileID: 6957637082770563890, guid: 04988da32e3431e40904c72723bee014, type: 3}
-  OffGreen: {fileID: 6943537601095860930, guid: 021aab59f4ebc04469206f5d3f31b658, type: 3}
-  OnBlue: {fileID: -2895777144591866063, guid: a58884a99837e024bab7e0a720f67ea6, type: 3}
-  OnRed: {fileID: -182523048956424022, guid: a92c55e2194e70348a3495902d7de5bf, type: 3}
-  OnGreen: {fileID: 2297302133121403006, guid: 3260c73d4022fa8449c54ba0204afa33, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::NodeRotatorV2
+--- !u!114 &8874020654608917970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4074106164087981101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1757e13eb3fe924a88facbf50251648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NodeV2
+  nodeType: 1
+  GridPosition: {x: 0, y: 0}
+  Connections: 03000000
+  CurrentColor: 0
+  SourceColor: 0
+  ReceiverColor: 0
+  ConvertedColor: 0
+  PortalID: 0
+  LinkedPortal: {fileID: 0}
+  ConnectedNodes: []

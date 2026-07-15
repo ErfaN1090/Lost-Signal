@@ -84,6 +84,13 @@ public class PuzzleManager : MonoBehaviour
         SpawnLevel();
 
         FindNodes();
+        foreach (Node node in nodes)
+        {
+            PowerFeadback feedback = node.GetComponent<PowerFeadback>();
+
+            if (feedback != null)
+                feedback.Initialize();
+        }
         LinkPortals();
 
         UpdatePower();
@@ -146,7 +153,7 @@ public class PuzzleManager : MonoBehaviour
     }
     public void UpdatePower()
     {
-
+        Debug.Log("====== UpdatePower ======");
         foreach (Node node in nodes)
         {
             node.SetColor(SignalColor.None);
@@ -162,14 +169,18 @@ public class PuzzleManager : MonoBehaviour
         }
         foreach (Node node in nodes)
         {
+            Debug.Log($"{node.name} : {node.currentcolor}");
+        }
+        foreach (Node node in nodes)
+        {
             PowerFeadback feedback = node.GetComponent<PowerFeadback>();
 
             if (feedback != null)
             {
+            
                 feedback.Refresh();
             }
         }
-        //Debug.Log("Check Win");
         CheckWin();
     }
     void PowerNode(Node node, SignalColor color, HashSet<Node> visited)
@@ -178,7 +189,7 @@ public class PuzzleManager : MonoBehaviour
             return;
 
         visited.Add(node);
-
+        Debug.Log($"{node.name} -> current color: {node.currentcolor} color: {color}");
         if (node.currentcolor == SignalColor.None)
         {
             node.SetColor(color);

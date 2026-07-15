@@ -1,20 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
-public enum Direction
-{
-    Up,
-    Right,
-    Down,
-    Left
-}
-public enum SignalColor
-{
-    None,
-    Blue,
-    Red,
-    Green
-}
+
 
 public class Node : MonoBehaviour
 {
@@ -45,16 +32,8 @@ public class Node : MonoBehaviour
     private PowerFeadback feedback;
     private void Awake()
     {
-        feedback = GetComponent<PowerFeadback>();
-    }
-    private void Start()
-    {
         nodePos = Vector2Int.RoundToInt(transform.position);
-
-        if (isSource)
-        {
-            sourceColor = currentcolor;
-        }
+        feedback = GetComponent<PowerFeadback>();
     }
     public void RotateDirection()
     {
@@ -145,6 +124,7 @@ public class Node : MonoBehaviour
     }
     public void SetColor(SignalColor color)
     {
+        //Debug.Log($"{name}: {currentcolor} -> {color}\n{System.Environment.StackTrace}");
         currentcolor = color;
     }
 }
